@@ -5,7 +5,7 @@ import boardgame.Position;
 public class ChessPosition {
 	private char column;
 	private int row;
-	
+
 	public char getColumn() {
 		return column;
 	}
@@ -21,11 +21,11 @@ public class ChessPosition {
 		this.column = column;
 		this.row = row;
 	}	
-	
+
 	protected Position toPosition() {
 		return new Position(8 - row, column - 'A');
 	}
-	
+
 	protected static ChessPosition fromPosition(Position position) {
 		return new ChessPosition((char)('A' - position.getColumn()), 8 - position.getRow());
 	}
