@@ -33,6 +33,8 @@ public class Main {
 			System.out.print("Posição de Destino: ");
 			ChessPosition target = UI.readChessPosition(sc);
 			
+			
+			
 			ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
 				if (capturedPiece != null) {
 					captured.add(capturedPiece);
