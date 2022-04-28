@@ -9,6 +9,7 @@ import boardgame.Piece;
 import boardgame.Position;
 import chess.pieces.Bishop;
 import chess.pieces.King;
+import chess.pieces.Knight;
 import chess.pieces.Pawn;
 import chess.pieces.Rook;
 
@@ -188,32 +189,35 @@ public class ChessMatch {
 	}
 
 	private void initialSetup() {
-		placeNewPiece('A', 1, new Rook(board, Color.BRANCO));
+		placeNewPiece('A', 1, new Rook(board, Color.BRANCO)); 
+		placeNewPiece('A', 2, new Pawn(board, Color.BRANCO));
+		placeNewPiece('B', 1, new Knight(board, Color.BRANCO));
+		placeNewPiece('B', 2, new Pawn(board, Color.BRANCO));
 		placeNewPiece('C', 1, new Bishop(board, Color.BRANCO));
+	    placeNewPiece('C', 2, new Pawn(board, Color.BRANCO));
+		placeNewPiece('D', 2, new Pawn(board, Color.BRANCO));
 	    placeNewPiece('E', 1, new King(board, Color.BRANCO));
-	    placeNewPiece('F', 1, new Bishop(board, Color.BRANCO));
-	    placeNewPiece('H', 1, new Rook(board, Color.BRANCO));
-	    placeNewPiece('A', 2, new Pawn(board, Color.BRANCO));
-	    placeNewPiece('B', 2, new Pawn(board, Color.BRANCO));
-        placeNewPiece('C', 2, new Pawn(board, Color.BRANCO));
-        placeNewPiece('D', 2, new Pawn(board, Color.BRANCO));
-        placeNewPiece('E', 2, new Pawn(board, Color.BRANCO));
-        placeNewPiece('F', 2, new Pawn(board, Color.BRANCO));
-        placeNewPiece('G', 2, new Pawn(board, Color.BRANCO));
+	    placeNewPiece('E', 2, new Pawn(board, Color.BRANCO));
+		placeNewPiece('F', 1, new Bishop(board, Color.BRANCO));
+	    placeNewPiece('F', 2, new Pawn(board, Color.BRANCO));
+	    placeNewPiece('G', 1, new Knight(board, Color.BRANCO));
+	    placeNewPiece('G', 2, new Pawn(board, Color.BRANCO));
+		placeNewPiece('H', 1, new Rook(board, Color.BRANCO));
         placeNewPiece('H', 2, new Pawn(board, Color.BRANCO));
 
-		placeNewPiece('A', 8, new Rook(board, Color.PRETO));
-		placeNewPiece('C', 8, new Bishop(board, Color.PRETO));
-		placeNewPiece('E', 8, new King(board, Color.PRETO));
-		placeNewPiece('F', 8, new Bishop(board, Color.PRETO));
-		placeNewPiece('H', 8, new Rook(board, Color.PRETO));
         placeNewPiece('A', 7, new Pawn(board, Color.PRETO));
-        placeNewPiece('B', 7, new Pawn(board, Color.PRETO));
-        placeNewPiece('C', 7, new Pawn(board, Color.PRETO));
-        placeNewPiece('D', 7, new Pawn(board, Color.PRETO));
-        placeNewPiece('E', 7, new Pawn(board, Color.PRETO));
-        placeNewPiece('F', 7, new Pawn(board, Color.PRETO));
+		placeNewPiece('A', 8, new Rook(board, Color.PRETO));
+		placeNewPiece('B', 7, new Pawn(board, Color.PRETO));
+		placeNewPiece('B', 8, new Knight(board, Color.PRETO));
+		placeNewPiece('C', 7, new Pawn(board, Color.PRETO));
+		placeNewPiece('C', 8, new Bishop(board, Color.PRETO));
+		placeNewPiece('D', 7, new Pawn(board, Color.PRETO));
+		placeNewPiece('E', 7, new Pawn(board, Color.PRETO));
+		placeNewPiece('E', 8, new King(board, Color.PRETO));
+		placeNewPiece('F', 7, new Pawn(board, Color.PRETO));
+		placeNewPiece('F', 8, new Bishop(board, Color.PRETO));
         placeNewPiece('G', 7, new Pawn(board, Color.PRETO));
+        placeNewPiece('G', 8, new Knight(board, Color.PRETO));
         placeNewPiece('H', 7, new Pawn(board, Color.PRETO));
 		
 	}
